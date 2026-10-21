@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisas</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 650px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+      background: #f5f5f5;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    button {
+      width: 100%;
+      padding: 16px;
+      margin: 15px 0 25px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+    }
+
+    a {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h1>🔎 Pesquisas</h1>
+
+    <p>
+      Clique no botão para abrir todas as pesquisas.
+      Caso seu navegador bloqueie alguma aba, use os links individuais abaixo.
+    </p>
+
+    <button onclick="abrirPesquisas()">
+      ⚡ ABRIR TODAS AS PESQUISAS
+    </button>
+
+    <a href="https://www.google.com/search?q=Flavio+rachadinha" target="_blank">
+      Flavio rachadinha
+    </a>
+
+    <a href="https://www.google.com/search?q=Fl%C3%A1vio+corrup%C3%A7%C3%A3o" target="_blank">
+      Flávio corrupção
+    </a>
+
+    <a href="https://www.google.com/search?q=Fl%C3%A1vio+Bolsonaro+dinheiro+vivo" target="_blank">
+      Flávio Bolsonaro dinheiro vivo
+    </a>
+
+    <a href="https://www.google.com/search?q=Fl%C3%A1vio+Bolsonaro+Ana+Clara" target="_blank">
+      Flávio Bolsonaro Ana Clara
+    </a>
+
+    <a href="https://www.google.com/search?q=Fl%C3%A1vio+Bolsonaro+Mil%C3%ADcia" target="_blank">
+      Flávio Bolsonaro Milícia
+    </a>
+
+    <a href="https://www.google.com/search?q=Fl%C3%A1vio+amigo+do+CV" target="_blank">
+      Flávio amigo do CV
+    </a>
+
+  </div>
+
+  <script>
+    function abrirPesquisas() {
+
+      const pesquisas = [
+        "https://www.google.com/search?q=Flavio+rachadinha",
+        "https://www.google.com/search?q=Fl%C3%A1vio+corrup%C3%A7%C3%A3o",
+        "https://www.google.com/search?q=Fl%C3%A1vio+Bolsonaro+dinheiro+vivo",
+        "https://www.google.com/search?q=Fl%C3%A1vio+Bolsonaro+Ana+Clara",
+        "https://www.google.com/search?q=Fl%C3%A1vio+Bolsonaro+Mil%C3%ADcia",
+        "https://www.google.com/search?q=Fl%C3%A1vio+amigo+do+CV"
+      ];
+
+      pesquisas.forEach(function(link) {
+        window.open(link, "_blank");
+      });
+
+    }
+  </script>
+
+</body>
+</html>
